@@ -1,0 +1,204 @@
+.ach-overall-con {
+    background-color: black;
+}
+
+/*    IMAGE SECTION        */
+.ach-1st-img {
+    width:500px;
+    height:300px;
+    display:inline-block;
+    border:solid 2px;
+    border-image: linear-gradient(to left, lightblue, hsl(278, 97%, 54%)) 1;
+
+}
+.ach-2st-img {
+    width:450px;
+    height:300px;
+    display:inline-block;
+    border:solid 2px;
+    border-image: linear-gradient(to left, lightblue, hsl(278, 97%, 54%)) 1;
+
+}
+.ach-4st-img {
+    width:450px;
+    height:500px;
+    display:inline-block;
+    border:solid 2px;
+    border-image: linear-gradient(to left, lightblue, hsl(278, 97%, 54%)) 1;
+}
+
+/*     CONTAINER SECTION          */
+
+.ach-1st-con {
+    height:100vh;
+    background-image: url(./../picture/achievement/aiichakangre.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.ach-2st-con {
+    height:100vh;
+    background-image: url(./../picture/achievement/publicspeaking.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.ach-3st-con {
+    height:100vh;
+    background-image: url(./../picture/achievement/southeastschool.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.ach-4st-con {
+    height:100vh;
+    padding:2%;
+    background-image: url(./../picture/achievement/chakangre.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+/*     PARAGRAPH SECTION          */
+
+.ach-1st-p {
+    display:inline-block;
+    width:500px;
+    font-size: 22px;
+    margin-left:5%;
+    margin-top:5%;
+    color:white;
+    background-color: rgb(71, 71, 71);
+    padding:25px;
+    border-radius: 20px;
+}
+.ach-4st-p {
+    display:inline-block;
+    width:450px;
+    height:200px;
+    font-size: 22px;
+    margin-left:2%;
+    margin-right: 2%;
+    justify-content: space-evenly;
+    margin-top:5%;
+    color:white;
+    background-color: rgb(71, 71, 71);
+    padding:25px;
+    border-radius: 20px;
+}
+
+/*  OTHER   */
+
+.ach-1st-child-con {
+    border:solid red;
+}
+
+
+
+
+@media (max-width:1200px) {
+    .ach-1st-img {
+        width:350px;
+        height:200px;
+    }
+    .ach-2st-img {
+        width:320px;
+        height:200px;
+    }
+    .ach-4st-img {
+        width:250px;
+        height:300px;
+    }
+.ach-1st-p {
+    width:380px;
+    font-size: 22px;
+    margin-left:5%;
+    margin-top:5%;
+    padding:25px;
+    border-radius: 20px;
+    font-size:15px;
+}
+.ach-4st-p {
+    display:inline-block;
+    width:330px;
+    height:125px;
+    font-size: 15px;
+}
+}
+@media (max-width:850px) {
+    .ach-1st-img {
+        width:250px;
+        height:180px;
+    }
+    .ach-2st-img {
+        width:220px;
+        height:150px;
+    }
+    .ach-4st-img {
+        width:150px;
+        height:200px;
+    }
+    .ach-1st-p {
+        width:380px;
+        font-size: 20px;
+        margin-left:5%;
+        margin-top:5%;
+        padding:25px;
+        border-radius: 20px;
+        font-size:15px;
+    }
+}
+@media (max-width:600px) {
+    .ach-1st-con {
+        flex-direction: column;
+    }
+    .ach-2st-con {
+        flex-direction: column;
+    }
+    .ach-3st-con {
+        flex-direction: column;
+    }
+    .ach-4st-p {
+        position: absolute;
+        margin-top:70%;
+    }
+    .ach-4st-img {
+        margin-bottom: 20%;
+        margin-left:10px;
+        margin-right:10px;
+    }
+}
+
+@media (max-width:470px) {
+    .ach-1st-con {
+        height:65vh;
+        padding-top:10px;
+    }
+    .ach-2st-con {
+        height:65vh;
+        padding-top:30px;
+    }
+    .ach-3st-con {
+        height:65vh;
+        padding-top:30px;
+    }
+    .ach-4st-con {
+        height:85vh;
+        
+    }
+    .ach-1st-p {
+        width:250px;
+    }
+    .ach-4st-p {
+        width:250px;
+        margin-top:90%;
+    }
+}

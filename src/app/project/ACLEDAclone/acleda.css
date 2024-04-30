@@ -1,0 +1,582 @@
+
+.header-space {
+    width:100%;
+    height:170px;
+  }
+  
+  .header-upper-con {
+    width:100%;
+    height: 18%;
+    background-color:#143C6D;  
+    position:fixed;
+    top:0;
+  }
+  #ac-logo {
+      width:160px;
+      margin:20px;
+      margin-left:40px;
+      display:inline-block;
+      float:left;
+  }
+  #cam-flag {
+      width:30px;
+      height:20px;
+      position:relative;
+      top:10px;
+      border:solid white 1px;
+      margin-left:30px;
+  }
+  .nav-con {
+      color:white;
+      display:flex;
+      float:right;
+      position:relative;
+      top:40px;
+      margin-right:4%;
+  }
+  .child-nav {
+      list-style: none;
+      margin-left:20px;
+      margin-right:20px;
+      font-size: 15px;
+      padding:10px;
+      cursor: pointer;
+  }
+  .main-option-con {
+      background-color:#122133;
+      position:fixed;
+      height:70px;
+      border-bottom:solid white;
+      width:100%;
+      display:flex;
+      transform: translateY(100px);
+      top:0;
+  }
+  .option-con{
+      display:flex;
+      margin-left:1%;
+      width:825px;
+  }
+  .option-child {
+      list-style: none;
+      color: white;
+      margin:10px;
+      margin-bottom:0px;
+      padding:10px;
+      padding-top:15px;
+      padding-bottom:0px;
+      cursor: pointer;
+  }
+  
+  .option-child:hover .option-bar-personal {
+    display:block;
+    background-color: grey;
+    height:325px;
+  }
+  .option-child:hover .option-bar-business{
+    display:block;
+  }
+  .option-child:hover .option-bar-cards {
+    display:block;
+  }
+  .option-child:hover .option-bar-digital {
+    display:block;
+  }
+  
+  /* */ 
+  #exchange{
+      color:white;
+      display:inline-block;
+      margin-left:22px;
+      margin-top:3px;
+      font-size: 12px;
+      position:relative;
+    }
+    .sec-container {
+      color:white;
+      width:50%;
+      height:40px;
+      max-height:40px;
+      overflow: hidden;
+      display:flex;
+      justify-content: flex-end;
+      margin-top:10px;
+      margin-right:10%;
+    }
+    .sec1-con {
+      width:20%;
+    }
+    #sec2-con {
+      position:relative;
+      margin-left:10px;
+      overflow: hidden;
+    }
+    .child-sec-con {
+      background-color: grey;
+    
+    }
+    .inlineblock {
+      display:inline-block;
+      margin-left:20px;
+      font-size: 13px;
+    }
+    .flag {
+      position:relative;
+      width:30px;
+      height:20px;
+      transform: translateY(4px) translateX(5px);
+    }
+    .mini-sec-con {
+      margin-left:25px;
+      display:inline-block;
+    }
+  
+  /* This is bar option section */
+  
+  
+  .option-bar-cover {
+    color:white;
+    position:absolute;
+  }
+  .option-bar-personal {
+    list-style: none;
+    background-color:grey;
+    margin-left:30px;
+    width:240px;
+    position:absolute;
+    transform: translateX(-55px) translateY(25px);
+    display:none;
+  }
+  .option-bar-business {
+    list-style: none;
+    background-color:grey;
+    margin-left:30px;
+    width:240px;
+    position:absolute;
+    transform: translateX(-55px) translateY(25px);
+    display:none;
+  }
+  .option-bar-cards {
+    list-style: none;
+    background-color:grey;
+    margin-left:30px;
+    width:240px;
+    position:absolute;
+    transform: translateX(-35px) translateY(25px);
+    display:none;
+  }
+  .option-bar-digital {
+    list-style: none;
+    background-color:grey;
+    margin-left:30px;
+    width:240px;
+    position:absolute;
+    transform: translateX(30px) translateY(25px);
+    display:none;
+  }
+  .option-bar-child {
+    background-color:#122133;
+    padding:10px;
+    cursor: pointer;
+  }
+  .option-bar-child:hover {
+    background-color:grey;
+  }
+  
+  /* end here */ 
+  
+  /* AD START HERE */
+  .ad-con {
+    width:100%;
+    position:relative;
+    display:flex;
+    top:70%;
+    left:0;
+    justify-content: center;
+    height:497px;
+    overflow: hidden;
+  }
+  .ad-child {
+    position:absolute;
+    visibility: hidden;
+  }
+  .ad-child1 {
+    position:absolute;
+    visibility: visible;
+  }
+  .ad-img {
+    width:1150px;
+  }
+  .ad-img-weird {
+    width: 728px;
+  }
+  #btn-left-ad {
+    position:absolute;
+    display: flex;
+    top:180px;
+    left:30px;
+    cursor: pointer;
+  }
+  #btn-right-ad {
+    position: absolute;
+    display: flex;
+    top:180px;
+    right:30px;
+    cursor: pointer;
+  }
+  .circle-btn {
+    position:absolute;
+    top:92.5%;
+    background-color:grey;
+    border-radius: 15px;
+  }
+  .circle-child {
+    margin:10px;
+    cursor: pointer;
+  }
+  .icon-child {
+    width:76px;
+  }
+  
+  .show {
+    visibility: visible;
+  }
+  .hide {
+    visibility: hidden;
+  }
+  /* AD END HERE*/ 
+  
+  
+  /*  Function nav  */
+  
+  .main-offer-bar {
+    background-color: #143C6D;
+    height:235px;
+    width:100%;
+    list-style:none;
+  }
+  .offer-bar {
+    height:235px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .offer-bar-child {
+    text-align: center;
+    height:70px;
+    margin-left:30px;
+    margin-right:30px;
+    color:white;
+    cursor: pointer;
+  }
+  .acleda-img {
+    height:267px;
+  }
+  .acleda-img-long {
+    height:87%;
+  }
+  /* END HERE */
+  
+  /* NEWS SECTION */
+  .news-main-container {
+    width:auto;
+    height:auto;
+    margin:30px;
+  }
+  .news-parent {
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+  .news-child {
+    text-align: center;
+    margin-top:30px;
+    width:495px;
+  }
+  .news-child-weird {
+    text-align: center;
+    margin-top:30px;
+  }
+  .news-child img{
+    width:495px;
+    border-radius: 15px;
+  }
+  .goback-link-child-ac {
+    text-decoration: none;
+    border:solid green;
+    padding:10px;
+    border-radius: 20px;
+    color:white;
+  }
+  .goback-link-ac {
+    position:absolute;
+    top:30px;
+    left:18%;
+  }
+  
+    .translateXfor490 {
+      transform: translateX(490px);
+    }
+    .translateXfor-490{
+      transform: translateX(-490px);
+    }
+    .translateXfor0{
+      transform: translateX(0px);
+    }
+  
+    /*Animation here ----------------------------------------- */
+  
+    .side-exchangerate-up {
+      animation-name: Exchangerate-up;
+      animation-duration: 1s;
+    }
+    .side-exchangerate-upper{
+      animation-name: Exchangerate-upper;
+      animation-duration: 1s;
+    }
+    .side-exchangerate-upperX2 {
+      animation-name: Exchangerate-upperX2;
+      animation-duration: 1s;
+    }
+    /*For ad in home page */
+    .ad-swipe-left490 {
+      animation-name: ad-swipe-left1;
+      animation-duration: 1s;
+    }
+    .ad-swipe-left0 {
+      animation-name: ad-swipe-left2;
+      animation-duration: 1s;
+    }
+    .ad-swipe-left-490 {
+      animation-name: ad-swipe-left3;
+      animation-duration: 1s;
+    }
+    
+    @keyframes Exchangerate-up{
+      to{transform: translateY(-40px);}
+    }
+    @keyframes Exchangerate-upper {
+      to{transform: translateY(-40px)}
+    }
+    @keyframes Exchangerate-upperX2 {
+      to{transform: translateY(-40px)}
+    }
+    /* For ad in home page */
+    @keyframes ad-swipe-left1 {
+      to{transform:translateX(490px)}
+    }
+    @keyframes ad-swipe-left2 {
+      to{transform:translateX(0px)}
+    }
+    @keyframes ad-swipe-left3 {
+      to{transform:translateX(-490px)}
+    }
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px) and (min-width:900px){
+  .header-upper-con {
+    width:100vw;
+    height:18%;
+  }
+  .sec-container {
+    margin-right:5%;
+    width:64%;
+  }
+  .main-option-con {
+    width:100vw;
+  }
+  .option-child {
+    font-size:13px;
+  }
+  .sec1-con {
+    width:23%;
+  }
+  .ad-con {
+    width:100vw;
+  }
+  .main-offer-bar {
+    width:100vw;
+  }
+  .goback-link-ac {
+    left: 22%;
+  }
+}
+@media (max-width:899px) and (min-width:670px) {
+  .option-con {
+    width:50%;
+  }
+  .header-upper-con {
+    height:18%;
+  }
+  .option-child {
+    font-size:11px;
+    margin:0px;
+    margin-top:10px;
+  }
+  .child-nav {
+    font-size: 12px;
+    margin-left:5px;
+  }
+  .ad-img {
+    width:1015px;
+  }
+  .sec-container{
+    margin-right:3%;
+  }
+  #exchange {
+    font-size: 11px;
+  }
+  #sec2-con {
+    font-size: 11px;
+  }
+  .main-offer-bar {
+    width:100vw;
+    height:118px;
+  }
+  .offer-bar-child {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .offer-bar {
+    height:131px;
+  }
+  .icon-child {
+    width:20px;
+  }
+  .dd-for-offer {
+    font-size: 10px;
+  }
+  #ac-logo {
+    width:150px;
+    margin:10px;
+    margin-left:20px;
+    margin-top:30px;
+  }s
+  .goback-link-ac {
+    left: 50%;
+  }
+}
+@media (max-width:670px) and (min-width:500px) {
+  .option-con {
+    display:none;
+  }
+  .sec-container {
+    width:100vw;
+    justify-content: center;
+    margin-right: 20%;
+  }
+  .inlineblock {
+    margin-left:30px;
+  }
+  .sec1-con {width:30%}
+  #ac-logo {
+    margin-left:39%;
+    margin-right: 50%;
+  }
+  .ad-con {
+    height:300px;
+    top:24%;
+  }
+  .ad-img-weird {
+    width:475px;
+    height:320px;
+  }
+  .ad-img {
+    width:636px;
+    height:320px;
+  }
+  .offer-bar {
+    justify-content: flex-start;
+    width:100vw;
+    overflow-x: scroll;
+  }
+  .news-child {
+    width:200px;
+  }
+  .news-child img{
+    width:200px;
+  }
+  .acleda-img {
+    height:137px;
+  }
+  .news-child-weird {
+    width:200px;
+  }
+  .acleda-img-long {
+    width:200px;
+    border-radius: 20px;
+  }
+}
+@media (max-width:499px) {
+  #ac-logo {
+    position:relative;
+    left:20%;
+  }
+  .option-con {
+    display: none;
+  }
+  .sec-container {
+    justify-content: flex-start;
+  }
+  .sec1-con {
+    width:52%;
+  }
+  #sec2-con {
+    Width:150%;
+  }
+  .ad-img-weird {
+    width:310px;
+    height:190px;
+  }
+  .ad-img {
+    width:100%;
+    height:190px;
+  }
+  .ad-con {
+    top:50%;
+    height:193px;
+  }
+  .header-upper-con {
+    width:100vw;
+    height:17%;
+  }
+  .main-option-con {
+    width:100vh;
+  }
+  #btn-left-ad {
+    top:50%;
+  }
+  #btn-right-ad {
+    top:50%;
+  }
+  .sec-container {
+    margin-right: 3%;
+    width:63%;
+  }
+  .offer-bar {
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  .news-child {
+    width:160px;
+  }
+  .news-child img {
+    width:160px;
+  }
+  .acleda-img {
+    height:110px;
+  }
+  .acleda-img-long {
+    width:200px;
+    border-radius: 20px;
+  }
+}

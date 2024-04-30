@@ -1,95 +1,68 @@
+'use client'
 import Image from "next/image";
+import { useState, useRef, useEffect } from "react";
 import styles from "./page.module.css";
-
+import traprofile from './picture/traprofile.png';
+import Link from "next/link";
+import "./Addon.css"
 export default function Home() {
+  let [moveDNLball, SetmoveDNLball] = useState()
+  let [freezeDNLball, SetfreezeDNLball] = useState();
+  let [text, Settext] = useState();
+  let [bg, Setbg] = useState();
+  let [board, Setboard] = useState();
+  let count = 0;
+  
+  function handleclick(){
+    count ++;
+    if(count % 2 == 0){
+      SetmoveDNLball("movebackDNLball")
+      setTimeout(() => {
+        SetfreezeDNLball("freezebackDNLball")
+        Setbg("changebg2white");
+        Settext("changecolor2black")
+        Setboard("changebg2gray")
+      }, 500)
+    }
+    else {
+      SetmoveDNLball("moveDNLball")
+      setTimeout(() => {
+        SetfreezeDNLball("freezeDNLball")
+        Setbg("changebg2gray");
+        Settext("changecolor2white")
+        Setboard("changebg2black")
+      }, 500)
+    } 
+  }
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+          <div onClick={handleclick} className='header-DNL-box'>
+                <div className={`header-DNL-ball ${moveDNLball} ${freezeDNLball}`} ></div>
+            </div>
+    <div className={`home-children-main ${bg}`}>
+      <div className={`home-main-container ${board}`}  >
+        <div className="home-picture-con">
+            <div className="home-picture4-absolute">
+            <Image id="home-profile-pic" src={traprofile} ></Image>
+              {/* This is an object that obsolute over the picture */}
+              <div className={`home-circle1 ${board}`} ></div>
+              <div className={`home-box1 ${board}`}></div>
+              <div className={`home-box2 ${board}`} ></div>
+            </div>
+          
+        </div>
+        <div className={`home-text-con ${text}`} >
+          <p className="home-small-text1">Hi! My name is</p>
+          <h1 className="home-h1-text">Ly Sochetra</h1>
+          <p className="home-small-text">I'm a Front-End Developer. welcome to my website, I hope this website helps you to know more about me and I'm so excited to let you explore all of my project and achievement.</p>
+          <br/>
+          <div className="home-explore-con">
+          <Link href='./project' className='home-explore-btn'  >Explore</Link>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
+    
+    </>
   );
 }

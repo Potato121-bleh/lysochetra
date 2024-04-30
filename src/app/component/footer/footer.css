@@ -1,0 +1,171 @@
+.footer-main {
+    /*background-image:linear-gradient(to right, hsl(0, 0%, 66%), rgb(36, 36, 36));*/
+    background-color: black;
+    height:100%;
+}
+.footer-left-section {
+    display: inline-block;
+    width:70%;
+    color:white;
+}
+#project-title {
+    font-size: 20px;
+    list-style: none;
+    font-weight: 700;
+    text-decoration: none;
+    color:white;
+}
+#achievement-title {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color:white;
+}
+.footer-project-section {
+    display:inline-block;
+    font-size: 15px;
+    list-style: none;
+}
+.footer-achievement-section {
+    display: inline-block;
+    font-size: 15px;
+    list-style: none;
+}
+.footer-child-list {
+    padding-top:10px;
+    text-decoration: none;
+}
+.footer-remove-style {
+    text-decoration: none;
+    color:white;
+}
+.footer-right-section {
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+#title-comment {
+    font-size: 26px;
+    padding-right:66px;
+}
+#comment-box {
+    padding:10px;
+    background-color:transparent;
+    overflow:hidden;
+    border-image: linear-gradient(to right, lightblue,red, blue) 1;
+}
+.footer-hardright-section {
+    display:inline-block;
+    float:right;
+    position:relative;
+    margin-top:20px;
+    right:10%;
+}
+.footer-icon {
+    margin:15px;
+    cursor: pointer;
+    color:white;
+}
+#footer-button {
+    padding:8px;
+    border-radius: 15px;
+    position:relative;
+    bottom:20px;
+    left:20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+#footer-button:hover {
+    box-shadow: 2px 5px 8px lightblue;
+    padding:10px;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) and (min-width:460px){
+    #project-title {
+        font-size:15px;
+    }
+    #achievement-title {
+        font-size: 15px;
+    }
+    .footer-child-list {
+        font-size: 12px;
+    }
+    .footer-project-section {
+        padding-left:20px;
+    }
+    .footer-achievement-section {
+        padding-left:20px;
+    }
+    .footer-left-section {
+        width:55%;
+    }
+    .footer-hardright-section {
+        right:2%;
+    }
+    .footer-icon {
+        width:25%;
+        margin:10px;
+    }
+}
+
+@media (max-width:459px) {
+    #project-title {
+        font-size:12px;
+    }
+    #achievement-title {
+        font-size: 12px;
+    }
+    .footer-child-list {
+        font-size: 10px;
+    }
+    .footer-left-section {
+        width:55%;
+    }
+    .footer-project-section {
+        padding-left:5%;
+    }
+    .footer-achievement-section {
+        padding-left:6%;
+    }
+    .footer-icon {
+        width:25%;
+        margin:5px;
+    }
+    .footer-hardright-section {
+        right:-4%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:1100px) and (min-width:900px){
+    #project-title {
+        font-size: 17px;
+    }
+    .footer-child-list {
+        font-size: 15px;
+    }
+    .footer-child-last {
+        padding-bottom: 10px;;
+    }
+}
+
+@media (max-width:899px) and (min-width:601px) {
+    
+}

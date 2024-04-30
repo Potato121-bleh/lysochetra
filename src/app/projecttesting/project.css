@@ -1,0 +1,57 @@
+.project-con {
+    height:auto;
+    overflow: hidden;
+}
+.project-ul {
+    width:85%;
+    border: solid greenyellow;
+    margin-left:6%;
+    padding: 20px;
+}
+.project-link-con {
+    padding: 30px;
+}
+.project-li {
+    width:80%;
+    display:inline-block;
+    background-color: lightblue;
+    margin-left: 27px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    border: solid black;
+    color:white;
+    text-align: center;
+}
+.icon-child {
+    cursor: pointer;
+    width:10px;
+    transition-duration: 1000ms;
+}
+.project-link-con {
+    position: relative;
+    width:100%;
+    height:100%;
+    display: block;
+}
+.dd-text {
+    position: absolute;
+    width:80%;
+    visibility: hidden;
+    border: solid red;
+    text-align: center;
+}
+.show {visibility: visible;}
+#ACLEDAclone { 
+    animation: movedown 1s;
+}
+@keyframes movedown {
+    to{margin-top: 8%;}
+}
+.project-hidden-block {
+    width:100%;
+    height:30px;
+    background-color: transparent;
+}

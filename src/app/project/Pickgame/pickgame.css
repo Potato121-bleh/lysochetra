@@ -1,0 +1,24 @@
+.pickgame-con {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pickgame-message {
+    border:solid red;
+    width:70%;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 20px;
+}
+.goback-link-child {
+    text-decoration: none;
+    border:solid green;
+    padding:10px;
+    border-radius: 20px;
+  }
+  .goback-link {
+    position:absolute;
+    top:30px;
+    left:3%;
+  }

@@ -1,0 +1,127 @@
+
+.defaultmoveDNL {
+    transform: translate(45px,8px);
+}
+
+
+.moveDNLball {
+    animation-name: moveDNLball;
+    animation-duration: 0.5s;
+}
+.freezeDNLball {
+    transform: translate(12px, 8px)
+}
+@keyframes moveDNLball {
+    to{transform: translate(12px, 8px)}
+}
+.changebg2white {background-color: white;}
+.changebg2gray {background-color:gray;}
+.changebg2black {background-color: black;}
+.changecolor2black {color:black;}
+.changecolor2white {color:white;}
+
+/* MOVE BACK SECTION */
+
+
+.movebackDNLball {
+    animation-name: movebackDNLball;
+    animation-duration: 0.5s;
+}
+.freezebackDNLball {
+    transform: translate(45px, 8px)
+}
+@keyframes movebackDNLball {
+    to{transform: translate(45px, 8px)}
+}
+
+
+
+/* FOR PROJECT SECTION */
+.rotateZ90 {animation: rotate90 0.5s ;}
+.rotateZ90back {animation: rotate90back 0.5s;}
+.padding {animation: movedown 0.5s;}
+.padding-extra {animation: movedownextra 0.5s}
+.paddingback {animation: movedownback 0.5s;}
+.padding4last {animation: movedownlast 0.5s;}
+@keyframes rotate90 {
+    to{transform: rotateZ(90deg);}
+}
+@keyframes rotate90back {
+    to{transform: rotateZ(0deg);}
+}
+@keyframes movedown {
+    to{margin-bottom: 15%;}
+}
+@keyframes movedownextra {
+    to{margin-bottom: 15%;}
+}
+@keyframes movedownback {
+    to{margin-bottom: 0%;}
+}
+@keyframes movedownlast {
+    to{height:60px;}
+} 
+@keyframes movedownlastback {
+    to{height:30px;}
+}
+/* just freeze section for project */
+
+.freezerotate1 {transform: rotateZ(90deg);}
+.freezerotate1back {transform: rotateZ(0deg);}
+.freezepadding {margin-bottom: 15%;}
+.freezepadding-extra {margin-bottom: 18%;}
+.freezepadding4last {height:60px;}
+
+
+
+/* media section */
+@media (max-width:1100px) and (min-width:700px) {
+    @keyframes movedownextra {
+        to{margin-bottom: 24%;}
+    }
+    .freezepadding-extra {margin-bottom: 24%;}
+}
+@media (max-width:699px) {
+    @keyframes movedownextra {
+        to{margin-bottom: 27%;}
+    }
+    .freezepadding-extra {margin-bottom: 27%;}
+    @keyframes movedown {
+        to{margin-bottom: 20%;}
+    }
+    .freezepadding {margin-bottom: 20%;}
+}
+
+@media (max-width:600px){
+    
+    .moveDNLball {
+        animation-name: moveDNLball;
+        animation-duration: 0.5s;
+    }
+    .freezeDNLball {
+        transform: translate(8px, 6px)
+    }
+    @keyframes moveDNLball {
+        to{transform: translate(8px, 6px)}
+    }
+    /* MOVE BACK SECTION */
+    
+    
+    .movebackDNLball {
+        animation-name: movebackDNLball;
+        animation-duration: 0.5s;
+    }
+    .freezebackDNLball {
+        transform: translate(26px, 6px)
+    }
+    @keyframes movebackDNLball {
+        to{transform: translate(26px, 6px)}
+    }
+
+    }
+@media (max-width:415px) {
+    .freezepadding {margin-bottom: 27%;}
+    @keyframes movedown {
+        to{margin-bottom: 27%;}
+    }
+}
