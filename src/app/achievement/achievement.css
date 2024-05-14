@@ -34,6 +34,7 @@
     background-image: url(./../picture/achievement/aiichakangre.jpg);
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +44,7 @@
     background-image: url(./../picture/achievement/publicspeaking.png);
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +54,7 @@
     background-image: url(./../picture/achievement/southeastschool.png);
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +65,7 @@
     background-image: url(./../picture/achievement/chakangre.png);
     background-repeat:no-repeat;
     background-size: cover;
+    background-position: center;
     justify-content: center;
     align-items: center;
     display:flex;

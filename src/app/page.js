@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import styles from "./page.module.css";
-import traprofile from './picture/traprofile.png';
+import traprofile from './picture/Homenobg1.png';
 import Link from "next/link";
 import "./Addon.css"
 export default function Home() {
@@ -41,15 +41,12 @@ export default function Home() {
             </div>
     <div className={`home-children-main ${bg}`}>
       <div className={`home-main-container ${board}`}  >
-        <div className="home-picture-con">
             <div className="home-picture4-absolute">
             <Image id="home-profile-pic" src={traprofile} ></Image>
               {/* This is an object that obsolute over the picture */}
-              <div className={`home-circle1 ${board}`} ></div>
+              {/*<div className={`home-circle1 ${board}`} ></div>
               <div className={`home-box1 ${board}`}></div>
-              <div className={`home-box2 ${board}`} ></div>
-            </div>
-          
+  <div className={`home-box2 ${board}`} ></div>*/}
         </div>
         <div className={`home-text-con ${text}`} >
           <p className="home-small-text1">Hi! My name is</p>

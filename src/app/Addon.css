@@ -2,7 +2,29 @@
 .defaultmoveDNL {
     transform: translate(45px,8px);
 }
+.show {animation: fadein 0.3s;}
+.hide {animation: fadeout 0.3s;}
+.freezehide {display:none};
+.freezeshow {display:block};
 
+@keyframes fadeout {
+    10%{opacity: 1;}
+    20%{opacity: 0.9;}
+    30%{opacity: 0.8;}
+    40%{opacity: 0.7;}
+    50%{opacity: 0.6;}
+    60%{opacity: 0.5;}
+    70%{opacity: 0.4;}
+    80%{opacity: 0.3;}
+    90%{opacity: 0.2;}
+    100%{opacity: 0;}
+  }
+@keyframes fadein {
+    25%{opacity: 0.3;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.8;}
+    100%{opacity: 1;}
+}
 
 .moveDNLball {
     animation-name: moveDNLball;
@@ -15,7 +37,7 @@
     to{transform: translate(12px, 8px)}
 }
 .changebg2white {background-color: white;}
-.changebg2gray {background-color:gray;}
+.changebg2gray {background-image: linear-gradient(to bottom, gray, white);}
 .changebg2black {background-color: black;}
 .changecolor2black {color:black;}
 .changecolor2white {color:white;}
@@ -71,6 +93,33 @@
 .freezepadding {margin-bottom: 15%;}
 .freezepadding-extra {margin-bottom: 18%;}
 .freezepadding4last {height:60px;}
+
+/* Journey Section */
+
+
+
+
+
+.moveleft {
+    animation: movelineleft 2s;
+   width:37%;
+}
+.freeze-move-line-left {
+    width:37%;
+    transform: translate(-16%,140px) rotateZ(90deg);
+}
+.linewidth {
+
+}
+.inlineblock {
+    display:inline-block;
+}
+@keyframes movelineleft {
+    to{
+        transform: translate(-16%,140px) rotateZ(90deg);}
+}
+
+
 
 
 
